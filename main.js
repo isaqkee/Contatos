@@ -33,10 +33,10 @@ class GerenciadorContatos {
 const gerenciadorContatos = new GerenciadorContatos();
 
 const contatoForm = document.getElementById('contato-form');
-const comentarioF = document.getElementById('comentario');
 const nomeF = document.getElementById('nome');
 const emailF = document.getElementById('email');
 const telefoneF = document.getElementById('telefone');
+const comentarioF = document.getElementById('comentario');
 const mostrarContatos = document.getElementById('mostrar-contatos');
 const ocultarContatos = document.getElementById('ocultar-contatos');
 const listaContatos = document.getElementById('contato-lista');
@@ -44,10 +44,10 @@ const listaContatos = document.getElementById('contato-lista');
 contatoForm.addEventListener('submit', (event)=>{
     event.preventDefault();
 
-    const nome = nomeF.value
-    const email = emailF.value
-    const telefone  = telefoneF.value
-    const comentario = comentarioF.value
+    const nome = nomeF.value;
+    const email = emailF.value;
+    const telefone  = telefoneF.value;
+    const comentario = comentarioF.value;
 
     const contato = new Contatos(nome, email, telefone, comentario);
 
